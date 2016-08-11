@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="goodrating">
+  <head>
+    <base href="/src/">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>goodrating</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  <body>
+
+    <div ng-view></div>
+
+    <!-- Library-->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+    <!-- Application-->
+    <script src="app.js"></script>
+
+    <!-- Load Modules -->
+    <script src="modules/dependencies.js"></script>
+
+    <!-- Table -->
+    <script src="modules/table/routes.js"></script>
+    <script src="modules/table/controllers/tableController.js"></script>
+  </body>
+</html>
