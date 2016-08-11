@@ -1,0 +1,19 @@
+{
+  "name": "goodrating-client",
+  "version": "0.0.1",
+  "description": "a client for rating college football teams good",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robotnoises/goodrating-client.git"
+  },
+  "author": "David Nichols",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robotnoises/goodrating-client/issues"
+  },
+  "homepage": "https://github.com/robotnoises/goodrating-client#readme"
+}
