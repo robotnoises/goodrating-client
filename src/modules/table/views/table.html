@@ -10,6 +10,7 @@
           <th scope="col">Offense</th>
           <th scope="col">Defense</th>
           <th scope="col">Players</th>
+          <th scope="col">Performance</th>
           <th scope="col">Total</th>
         </tr>
       </thead>
@@ -22,6 +23,7 @@
           <td ng-bind="r.ypp_offense_rating" class="truncate"></td>
           <td ng-bind="r.ypp_defense_rating" class="truncate"></td>
           <td ng-bind="r.recruiting_score_rating" class="truncate"></td>
+          <td ng-bind="r.ats" class="truncate"></td>
           <td ng-bind="r.total_rating" class="truncate"></td>
         </tr>
       </tbody>
