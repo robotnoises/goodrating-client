@@ -16,7 +16,7 @@
 
       <tbody>
         <tr ng-repeat="r in ratings">
-          <td>#</td>
+          <td ng-bind="r.rank"></td>
           <td ng-bind="r.name"></td>
           <td ng-bind="r.win_percentage_rating" class="truncate">>/td>
           <td ng-bind="r.ypp_offense_rating" class="truncate"></td>
