@@ -39,6 +39,10 @@ table thead tr {
   color: #444;
 }
 
+table td {
+  border-width: 2px;
+}
+
 /* Backgrounds */
 
 .bg-lightgrey {
@@ -48,11 +52,11 @@ table thead tr {
 /* Borders */
 
 .border-top {
-  border-top: 4px solid rgba(0,0,0,0.2);
+  border-top: 4px solid rgba(0,0,0,0.3);
 }
 
 .border-bottom {
-  border-bottom: 4px solid rgba(0,0,0,0.2);
+  border-bottom: 4px solid rgba(0,0,0,0.3);
 }
 
 /* Text */
