@@ -19,6 +19,8 @@
   "homepage": "https://github.com/robotnoises/goodrating-client#readme",
   "devDependencies": {
     "bower": "^1.7.9",
+    "grunt": "^1.0.1",
+    "grunt-spritesmith": "^6.3.1",
     "http-server": "^0.9.0"
   }
 }
