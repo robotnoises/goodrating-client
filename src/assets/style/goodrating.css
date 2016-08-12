@@ -1,0 +1,12 @@
+/* Reset */
+
+* {
+  outline: none;
+}
+
+/* Images */
+
+*.logo {
+  display: inline-block;
+  transform: scale(0.25);
+}
