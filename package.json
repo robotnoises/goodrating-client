@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "http-server -a localhost -p 8000",
-    "heroku-prebuild": "bower install"
+    "postinstall": "npm install bower -g && bower install"
   },
   "repository": {
     "type": "git",
