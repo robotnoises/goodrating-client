@@ -38,9 +38,14 @@ table thead tr {
   /*background-color: #FCE38A;*/
   color: #444;
 }
+table thead th {
+  padding: 0 20px;
+}
 
 table td {
-  border-width: 2px;
+  /*font-size: 14px;*/
+  line-height: 22px;
+  padding: 14px 20px;
 }
 
 /* Backgrounds */
@@ -86,4 +91,11 @@ table td {
 
 .scroll-container {
   overflow: auto;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
 }

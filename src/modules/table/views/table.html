@@ -6,11 +6,11 @@
         <tr>
           <th scope="col">Rank</th>
           <th scope="col">Team</th>
-          <th scope="col">Win % Score</th>
-          <th scope="col">Offense Score</th>
-          <th scope="col">Defense Score</th>
-          <th scope="col">Player Score</th>
-          <th scope="col">Total Score</th>
+          <th scope="col">Wins</th>
+          <th scope="col">Offense</th>
+          <th scope="col">Defense</th>
+          <th scope="col">Players</th>
+          <th scope="col">Total</th>
         </tr>
       </thead>
 
@@ -18,11 +18,11 @@
         <tr ng-repeat="r in ratings">
           <td>#</td>
           <td ng-bind="r.name"></td>
-          <td ng-bind="r.win_percentage_rating">/td>
-          <td ng-bind="r.ypp_offense_rating"></td>
-          <td ng-bind="r.ypp_defense_rating"></td>
-          <td ng-bind="r.recruiting_score_rating"></td>
-          <td ng-bind="r.total_rating"></td>
+          <td ng-bind="r.win_percentage_rating" class="truncate">>/td>
+          <td ng-bind="r.ypp_offense_rating" class="truncate"></td>
+          <td ng-bind="r.ypp_defense_rating" class="truncate"></td>
+          <td ng-bind="r.recruiting_score_rating" class="truncate"></td>
+          <td ng-bind="r.total_rating" class="truncate"></td>
         </tr>
       </tbody>
     </table>
