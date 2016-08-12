@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "angular-route": "^1.5.8",
-    "angular": "^1.4"
+    "angular": "^1.4",
+    "concise": "^3.4.0"
   }
 }
