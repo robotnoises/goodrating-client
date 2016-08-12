@@ -26,7 +26,7 @@ var config = function (grunt) {
 
   // Register custom tasks
   
-  grunt.registerTask('build-sprites', ['sprite:logos'])
+  grunt.registerTask('build-sprite', ['sprite:logos'])
 };
 
 module.exports = config;

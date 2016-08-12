@@ -3,23 +3,24 @@
   <div class="bg-lightgrey border-top spaced scroll-container">
     <table class="table--flat table--hoverRow table--responsive">
       <thead>
-        <tr>
+        <tr class="bold">
           <th scope="col">Rank</th>
-          <th scope="col">Team</th>
+          <th scope="col" colspan="2">Team</th>
           <th scope="col">Wins</th>
           <th scope="col">Offense</th>
           <th scope="col">Defense</th>
           <th scope="col">Players</th>
-          <th scope="col">Performance</th>
+          <th scope="col">ATS</th>
           <th scope="col">Total</th>
         </tr>
       </thead>
 
       <tbody>
         <tr ng-repeat="r in ratings">
-          <td ng-bind="r.rank"></td>
+          <td ng-bind="r.rank" class="truncate"></td>
           <td ng-bind="r.name"></td>
-          <td ng-bind="r.win_percentage_rating" class="truncate">>/td>
+          <td><span class="logo" ng-class="'icon-' + r.slug"></span>&nbsp;</td>
+          <td ng-bind="r.win_percentage_rating" class="truncate"></td>
           <td ng-bind="r.ypp_offense_rating" class="truncate"></td>
           <td ng-bind="r.ypp_defense_rating" class="truncate"></td>
           <td ng-bind="r.recruiting_score_rating" class="truncate"></td>
