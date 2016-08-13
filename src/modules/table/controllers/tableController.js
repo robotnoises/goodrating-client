@@ -9,7 +9,9 @@
   function tableController($scope, $routeParams, tableDataService) {
     $scope.ratings = [];
 
-    tableDataService.calc('/calc/2015')
+    var year = $routeParams.year || '';
+
+    tableDataService.calc('/calc/' + year)
       .then(function (data) {
         $scope.ratings = data;
       })
