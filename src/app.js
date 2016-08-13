@@ -3,6 +3,7 @@
 angular.module('goodrating', [
   
   // goodrating!
-  'goodrating.table'
+  'goodrating.table',
+  'goodrating.global'
   
 ]);

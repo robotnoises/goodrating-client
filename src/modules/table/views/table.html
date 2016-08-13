@@ -16,6 +16,11 @@
       </thead>
 
       <tbody>
+        <tr ng-if="!loaded" class="bg-grey">
+          <td scope="col" colspan="9">
+            <spinner loaded="loaded"></spinner>
+          </td>
+        </tr>
         <tr ng-repeat="r in ratings">
           <td ng-bind="r.rank" class="truncate"></td>
           <td ng-bind="r.name"></td>
