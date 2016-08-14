@@ -13,7 +13,7 @@
     function _calc(path) {
       return $q(function (resolve, reject) {
         $http({
-          method: 'POST',
+          method: 'GET',
           url: apiBase + path
         })
         .then(function (response) {
