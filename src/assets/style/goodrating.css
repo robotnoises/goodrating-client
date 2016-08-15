@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 *.logo {
   display: inline-block;
   transform: scale(0.5);
+  margin: -25px;
 }
 
 /* Tables */
@@ -35,7 +36,7 @@ table {
 }
 
 table thead tr {
-  background-color: #ddd;
+  background-color: #eaeaea;
   /*background-color: #FCE38A;*/
   color: #444;
 }
@@ -50,19 +51,31 @@ table td {
   vertical-align: middle;
 }
 
-th.highlight-cell {
-  background-color: rgba(255, 215, 0, 0.2);
+td.sortable {
+  background-color: rgba(0,0,0,0.02);
 }
 
 td.highlight-cell {
-  background-color: rgba(255, 215, 0, 0.35);
+  background-color: rgba(255, 215, 0, 0.15);
+}
+
+table thead tr th.highlightable-cell {
+  background-color: #ddd;
 }
 
 th.highlightable-cell:hover,
 th.highlightable-cell:active {
-  background-color: rgba(255, 215, 0, 0.1);
+  background-color: #aaa;
 }
 
+table thead tr th.highlight-cell {
+  background-color: #bbb;
+}
+
+.table--border thead, 
+.table--border td {
+  border-bottom: 1px solid #f7f7f7;
+}
 
 /* Backgrounds */
 
@@ -156,7 +169,7 @@ th.highlightable-cell:active {
 }
 
 .floating {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .rounded {

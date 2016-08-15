@@ -1,6 +1,6 @@
 <div row>
   <h1 class="centered">good rating {{foo}}</h1>
-  <div class="bg-lightgrey border-top spaced scroll-container">
+  <div class="bg-lightgrey spaced scroll-container floating">
     <table class="table--flat table--hoverRow table--responsive">
       <thead>
         <tr class="bold">
@@ -22,15 +22,15 @@
           </td>
         </tr>
         <tr ng-repeat="r in ratings">
-          <td ng-bind="r.rank" class="truncate"></td>
-          <td ng-bind="r.name"></td>
-          <td><span class="logo" ng-class="'icon-' + r.slug"></span>&nbsp;</td>
-          <td ng-bind="r.win_percentage_rating" class="truncate" ng-class="{'highlight-cell': sortColumn === 'win_percentage_rating'}"></td>
-          <td ng-bind="r.ypp_offense_rating" class="truncate" ng-class="{'highlight-cell': sortColumn === 'ypp_offense_rating'}"></td>
-          <td ng-bind="r.ypp_defense_rating" class="truncate" ng-class="{'highlight-cell': sortColumn === 'ypp_defense_rating'}"></td>
-          <td ng-bind="r.recruiting_score_rating" class="truncate" ng-class="{'highlight-cell': sortColumn === 'recruiting_score_rating'}"></td>
-          <td ng-bind="r.ats" class="truncate" ng-class="{'highlight-cell': sortColumn === 'ats'}"></td>
-          <td ng-bind="r.total_rating" class="truncate" ng-class="{'highlight-cell': sortColumn === 'total_rating'}"></td>
+          <td ng-bind="r.rank" class="truncate" title="Team Rank (Total Rating)"></td>
+          <td ng-bind="r.name" title="Team Name"></td>
+          <td><span class="logo" ng-class="'icon-' + r.slug" title="{{r.name}}"></span>&nbsp;</td>
+          <td ng-bind="r.win_percentage_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'win_percentage_rating'}" title="Win Percentage Rating"></td>
+          <td ng-bind="r.ypp_offense_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'ypp_offense_rating'}" title="Offensive Rating"></td>
+          <td ng-bind="r.ypp_defense_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'ypp_defense_rating'}" title="Defensive Rating"></td>
+          <td ng-bind="r.recruiting_score_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'recruiting_score_rating'}" title="Player Rating"></td>
+          <td ng-bind="r.ats" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'ats'}" title="Against the Spread"></td>
+          <td ng-bind="r.total_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'total_rating'}" title="Total Rating"></td>
         </tr>
       </tbody>
     </table>
