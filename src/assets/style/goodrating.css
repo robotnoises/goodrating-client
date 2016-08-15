@@ -50,6 +50,20 @@ table td {
   vertical-align: middle;
 }
 
+th.highlight-cell {
+  background-color: rgba(255, 215, 0, 0.2);
+}
+
+td.highlight-cell {
+  background-color: rgba(255, 215, 0, 0.35);
+}
+
+th.highlightable-cell:hover,
+th.highlightable-cell:active {
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
+
 /* Backgrounds */
 
 .bg-grey {
@@ -132,6 +146,10 @@ table td {
 }
 
 /* Helpers */
+
+.pointer {
+  cursor: pointer;
+}
 
 .centered {
   text-align: center;
