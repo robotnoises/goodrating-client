@@ -23,7 +23,7 @@
         </tr>
         <tr ng-repeat="r in ratings">
           <td ng-bind="r.rank" class="truncate" title="Team Rank (Total Rating)"></td>
-          <td ng-bind="r.name" title="Team Name"></td>
+          <td id="teamname" ng-bind="r.name" title="Team Name"></td>
           <td><span class="logo" ng-class="'icon-' + r.slug" title="{{r.name}}"></span>&nbsp;</td>
           <td ng-bind="r.win_percentage_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'win_percentage_rating'}" title="Win Percentage Rating"></td>
           <td ng-bind="r.ypp_offense_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'ypp_offense_rating'}" title="Offensive Rating"></td>
