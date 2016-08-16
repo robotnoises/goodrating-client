@@ -24,6 +24,20 @@
     $scope.ratings = [];
     $scope.loaded = false;
     $scope.sortColumn = ($location.search().sortby) ? COLUMN[$location.search().sortby.toUpperCase()] : COLUMN.TOTAL_RATING;
+    
+    function doNothin() {
+      console.log('did nothin.');
+    }
+
+    $scope.years = [
+      { 'name': '2015 Season', 'action': doNothin, 'default': true },
+      { 'name': '2016 Season', 'action': doNothin },
+    ];
+
+    $scope.sorts = [
+      { 'name': 'Sort Descending', 'action': doNothin, 'default': true },
+      { 'name': 'Sort Ascending', 'action': doNothin }
+    ];
 
     // Scope methods
 
