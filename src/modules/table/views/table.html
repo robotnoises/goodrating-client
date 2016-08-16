@@ -10,13 +10,13 @@
   <div class="menu">
     <ul>
       <li>
-        <dropdown items="years"></dropdown>
+        <dropdown items="years" selected="selectedYear"></dropdown>
       </li>
       <li>
-        <dropdown items="sorts"></dropdown>
+        <dropdown items="sorts" selected="sortDirection"></dropdown>
       </li>
-      <li class="full">
-        <input class="text-input flex" type="text" ng-model="teamNameFilter" placeholder="Type here to find your team..." />
+      <li>
+        <input class="text-input" type="text" ng-model="teamNameFilter" placeholder="Type here to find your team..." />
       </li>
     </ul>
   </div>
@@ -55,5 +55,8 @@
         </tr>
       </tbody>
     </table>
+  </div>
+  <div ng-if="errorMsg">
+    <p class="centered spaced" ng-bind="errorMsg"></p>
   </div>
 </div>

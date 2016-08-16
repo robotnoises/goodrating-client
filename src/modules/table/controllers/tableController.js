@@ -8,6 +8,11 @@
 
   function tableController($scope, $routeParams, $location, tableDataService) {
     
+    // Private
+
+    var ratings = [];
+    var ratingsReversed = [];
+
     var COLUMN = {
       'WIN_PERCENTAGE': 'win_percentage',
       'YPP_OFFENSE': 'ypp_offense',
@@ -21,25 +26,54 @@
       'TOTAL_RATING': 'total_rating'
     };
 
-    $scope.ratings = [];
-    $scope.loaded = false;
-    $scope.sortColumn = ($location.search().sortby) ? COLUMN[$location.search().sortby.toUpperCase()] : COLUMN.TOTAL_RATING;
+    var YEAR = {
+      '2015': '2015 Season',
+      '2016': '2016 Season'  
+    };
+
+    var SORT_DIRECTION = {
+      'ASCENDING': 'Sort Ascending',
+      'DESCENDING': 'Sort Descending'
+    };
     
-    function doNothin() {
-      console.log('did nothin.');
+    function changeYear(year) {
+      $location.path('/table/' + year);
     }
 
+    function reverseSort(reverse) {
+      $scope.sortDirection = (reverse) ? SORT_DIRECTION.ASCENDING : SORT_DIRECTION.DESCENDING;
+      $scope.ratings = (reverse) ? ratingsReversed : ratings;
+    }
+
+    // Scope shit
+
+    $scope.ratings = [];
+    $scope.loaded = false;
+    $scope.sortDirection = SORT_DIRECTION.DESCENDING;
+    $scope.selectedYear = YEAR[$routeParams.year];
+    $scope.sortColumn = ($location.search().sortby) ? COLUMN[$location.search().sortby.toUpperCase()] : COLUMN.TOTAL_RATING;
+
     $scope.years = [
-      { 'name': '2015 Season', 'action': doNothin, 'default': true },
-      { 'name': '2016 Season', 'action': doNothin },
+      { 
+        'name': '2015 Season', 
+        'action': changeYear.bind(undefined, '2015') 
+      },
+      { 
+        'name': '2016 Season', 
+        'action': changeYear.bind(undefined, '2016') 
+      }
     ];
 
     $scope.sorts = [
-      { 'name': 'Sort Descending', 'action': doNothin, 'default': true },
-      { 'name': 'Sort Ascending', 'action': doNothin }
+      { 
+        'name': 'Sort Descending', 
+        'action': reverseSort.bind(undefined, false)
+      },
+      { 
+        'name': 'Sort Ascending', 
+        'action': reverseSort.bind(undefined, true) 
+      }
     ];
-
-    // Scope methods
 
     $scope.sortBy = function (column) {
       $location.search('sortby', COLUMN[column.toUpperCase()] || COLUMN.TOTAL_RATING)
@@ -52,9 +86,15 @@
     tableDataService.calc('/calc/' + year, $location.search())
       .then(function (data) {
         $scope.ratings = data;
+        $scope.errorMsg = '';
         $scope.loaded = !!data;
+
+        ratings = data;
+        ratingsReversed = ratings.slice().reverse();
       })
       .catch(function (error) {
+        $scope.loaded = true;
+        $scope.errorMsg = 'Sorry, there was a problem retrieving the data.';
         console.error(error);
       })
   }

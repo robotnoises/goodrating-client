@@ -39,12 +39,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu ul {
   display: table;
+  vertical-align: middle;
   padding-left: 0;
 }
 
 .menu ul li {
   display: table-cell;
-  border-right: 1px solid rgba(0,0,0,0.05);
+  border-right: 1px solid rgba(0,0,0,0.1);
   list-style: none;
   font-size: 14px;
 }
@@ -53,6 +54,11 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 0;
   margin-right: 0;
   padding-right: 0;
+}
+
+.menu i {
+  padding-left: 8px;
+  font-size: 14px;
 }
 
 /* Inputs */
