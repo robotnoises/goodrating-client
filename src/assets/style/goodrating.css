@@ -22,6 +22,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Containers */
 
+.scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 100px;
+}
+
 .quote {
   display: block;
   width: 100%;
@@ -296,11 +302,6 @@ table thead tr th.highlight-cell {
 
 .inline-block {
   display: inline-block;
-}
-
-.scroll-container {
-  overflow-x: auto;
-  overflow-y: hidden;
 }
 
 .truncate {
