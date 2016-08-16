@@ -20,6 +20,35 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
+/* Containers */
+
+.quote {
+  display: block;
+  width: 100%;
+  margin: 25px auto;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.15em;
+  color: #999;
+  font-style: italic; 
+}
+
+/* Inputs */
+
+input.text-input {
+  margin-bottom: 20px;
+  padding: 10px 10px 5px 0;
+  height: auto;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 1.25em;
+  border-bottom: 2px solid rgba(0,0,0,0.2) !important;
+  border-radius: 0;
+  color: #222;
+  box-shadow: none !important;
+}
+
 /* Images */
 
 *.logo {

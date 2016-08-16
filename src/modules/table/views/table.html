@@ -1,6 +1,13 @@
 <div row>
-  <h1 class="centered">good rating {{foo}}</h1>
-  <div class="bg-lightgrey spaced scroll-container floating">
+  <h1 class="centered">good rating</h1>
+  
+  <div class="quote">"The good college football rating."</div>
+
+  <div>
+    <input class="text-input" type="text" ng-model="teamNameFilter" placeholder="Find your team" />
+  </div>
+
+  <div class="bg-lightgrey scroll-container floating">
     <table class="table--flat table--hoverRow table--responsive">
       <thead>
         <tr class="bold">
@@ -21,7 +28,7 @@
             <spinner loaded="loaded"></spinner>
           </td>
         </tr>
-        <tr ng-repeat="r in ratings">
+        <tr ng-repeat="r in ratings | filter: { name: teamNameFilter }">
           <td ng-bind="r.rank" class="truncate" title="Team Rank (Total Rating)"></td>
           <td id="teamname" ng-bind="r.name" title="Team Name"></td>
           <td><span class="logo" ng-class="'icon-' + r.slug" title="{{r.name}}"></span>&nbsp;</td>
