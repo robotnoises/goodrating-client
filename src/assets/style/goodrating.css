@@ -29,21 +29,51 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding: 10px;
   font-size: 1.15em;
-  color: #999;
+  color: #aaa;
   font-style: italic; 
+}
+
+.menu {
+  border-top: 1px solid rgba(0,0,0,0.1) !important;
+  line-height: 32px;
+  padding: 5px 0;
+}
+
+.menu ul {
+  display: flex;
+  padding-left: 0;
+}
+
+.menu ul li {
+  display: inline-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row; 
+  padding: 0 10px;
+  border-right: 1px solid rgba(0,0,0,0.05);
+  list-style: none;
+  font-size: 14px;
+}
+
+.menu ul li.full {
+  width: 100%;
+}
+
+.menu ul li:last-child {
+  border-right: 0;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 /* Inputs */
 
 input.text-input {
-  margin-bottom: 20px;
-  padding: 10px 10px 5px 0;
+  padding: 5px 10px 5px 0;
   height: auto;
   border: 0;
   outline: 0;
+  font-size: 14px;
   background-color: transparent;
-  font-size: 1.25em;
-  border-bottom: 2px solid rgba(0,0,0,0.2) !important;
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important;
   border-radius: 0;
   color: #222;
   box-shadow: none !important;
@@ -213,6 +243,10 @@ table thead tr th.highlight-cell {
 
 .spaced {
   margin: 50px 10px;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .scroll-container {
