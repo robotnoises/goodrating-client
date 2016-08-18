@@ -1,244 +1,40 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\node.exe',
-1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'install',
-1 verbose cli   'grunt-rename',
-1 verbose cli   '--save-dev' ]
-2 info using npm@2.15.5
-3 info using node@v4.4.6
-4 verbose install initial load of C:\Work\personal\goodrating-client\package.json
-5 warn package.json goodrating-client@0.0.1 No README data
-6 verbose installManyTop reading scoped package data from C:\Work\personal\goodrating-client\node_modules\bower\package.json
-7 verbose installManyTop reading scoped package data from C:\Work\personal\goodrating-client\node_modules\compression\package.json
-8 verbose installManyTop reading scoped package data from C:\Work\personal\goodrating-client\node_modules\express\package.json
-9 verbose installManyTop reading scoped package data from C:\Work\personal\goodrating-client\node_modules\grunt\package.json
-10 verbose installManyTop reading scoped package data from C:\Work\personal\goodrating-client\node_modules\grunt-contrib-copy\package.json
-11 verbose installManyTop reading scoped package data from C:\Work\personal\goodrating-client\node_modules\grunt-contrib-cssmin\package.json
-12 verbose installManyTop reading scoped package data from C:\Work\personal\goodrating-client\node_modules\grunt-contrib-rename\package.json
-13 verbose installManyTop reading scoped package data from C:\Work\personal\goodrating-client\node_modules\grunt-contrib-uglify\package.json
-14 verbose installManyTop reading scoped package data from C:\Work\personal\goodrating-client\node_modules\grunt-spritesmith\package.json
-15 verbose installManyTop reading scoped package data from C:\Work\personal\goodrating-client\node_modules\http-server\package.json
-16 info package.json grunt-contrib-rename@0.0.3 No license field.
-17 verbose readDependencies loading dependencies from C:\Work\personal\goodrating-client\package.json
-18 silly cache add args [ 'grunt-rename', null ]
-19 verbose cache add spec grunt-rename
-20 silly cache add parsed spec Result {
-20 silly cache add   raw: 'grunt-rename',
-20 silly cache add   scope: null,
-20 silly cache add   name: 'grunt-rename',
-20 silly cache add   rawSpec: '',
-20 silly cache add   spec: 'latest',
-20 silly cache add   type: 'tag' }
-21 silly addNamed grunt-rename@latest
-22 verbose addNamed "latest" is being treated as a dist-tag for grunt-rename
-23 info addNameTag [ 'grunt-rename', 'latest' ]
-24 silly mapToRegistry name grunt-rename
-25 silly mapToRegistry using default registry
-26 silly mapToRegistry registry https://registry.npmjs.org/
-27 silly mapToRegistry data Result {
-27 silly mapToRegistry   raw: 'grunt-rename',
-27 silly mapToRegistry   scope: null,
-27 silly mapToRegistry   name: 'grunt-rename',
-27 silly mapToRegistry   rawSpec: '',
-27 silly mapToRegistry   spec: 'latest',
-27 silly mapToRegistry   type: 'tag' }
-28 silly mapToRegistry uri https://registry.npmjs.org/grunt-rename
-29 verbose addNameTag registry:https://registry.npmjs.org/grunt-rename not in flight; fetching
-30 verbose request uri https://registry.npmjs.org/grunt-rename
-31 verbose request no auth needed
-32 info attempt registry request try #1 at 5:02:11 PM
-33 verbose request id fbfca146e7d15cb3
-34 http request GET https://registry.npmjs.org/grunt-rename
-35 http 200 https://registry.npmjs.org/grunt-rename
-36 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-36 verbose headers   etag: '"3IVZQAAC4GAOKPJ7S3RK52GDV"',
-36 verbose headers   'content-type': 'application/json',
-36 verbose headers   'content-encoding': 'gzip',
-36 verbose headers   'cache-control': 'max-age=300',
-36 verbose headers   'content-length': '1970',
-36 verbose headers   'accept-ranges': 'bytes',
-36 verbose headers   date: 'Wed, 17 Aug 2016 21:02:11 GMT',
-36 verbose headers   via: '1.1 varnish',
-36 verbose headers   age: '0',
-36 verbose headers   connection: 'keep-alive',
-36 verbose headers   'x-served-by': 'cache-iad2638-IAD',
-36 verbose headers   'x-cache': 'HIT',
-36 verbose headers   'x-cache-hits': '1',
-36 verbose headers   'x-timer': 'S1471467731.451336,VS0,VE106',
-36 verbose headers   vary: 'Accept-Encoding' }
-37 silly get cb [ 200,
-37 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-37 silly get     etag: '"3IVZQAAC4GAOKPJ7S3RK52GDV"',
-37 silly get     'content-type': 'application/json',
-37 silly get     'content-encoding': 'gzip',
-37 silly get     'cache-control': 'max-age=300',
-37 silly get     'content-length': '1970',
-37 silly get     'accept-ranges': 'bytes',
-37 silly get     date: 'Wed, 17 Aug 2016 21:02:11 GMT',
-37 silly get     via: '1.1 varnish',
-37 silly get     age: '0',
-37 silly get     connection: 'keep-alive',
-37 silly get     'x-served-by': 'cache-iad2638-IAD',
-37 silly get     'x-cache': 'HIT',
-37 silly get     'x-cache-hits': '1',
-37 silly get     'x-timer': 'S1471467731.451336,VS0,VE106',
-37 silly get     vary: 'Accept-Encoding' } ]
-38 verbose get saving grunt-rename to C:\Users\nicholsd\AppData\Roaming\npm-cache\registry.npmjs.org\grunt-rename\.cache.json
-39 verbose correctMkdir C:\Users\nicholsd\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-40 silly addNameTag next cb for grunt-rename with tag latest
-41 silly addNamed grunt-rename@0.1.4
-42 verbose addNamed "0.1.4" is a plain semver version for grunt-rename
-43 silly mapToRegistry name grunt-rename
-44 silly mapToRegistry using default registry
-45 silly mapToRegistry registry https://registry.npmjs.org/
-46 silly mapToRegistry data Result {
-46 silly mapToRegistry   raw: 'grunt-rename',
-46 silly mapToRegistry   scope: null,
-46 silly mapToRegistry   name: 'grunt-rename',
-46 silly mapToRegistry   rawSpec: '',
-46 silly mapToRegistry   spec: 'latest',
-46 silly mapToRegistry   type: 'tag' }
-47 silly mapToRegistry uri https://registry.npmjs.org/grunt-rename
-48 verbose addRemoteTarball https://registry.npmjs.org/grunt-rename/-/grunt-rename-0.1.4.tgz not in flight; adding
-49 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-rename/-/grunt-rename-0.1.4.tgz',
-49 verbose addRemoteTarball   '73d26af1da4d223cb63465cb3506167daf0894c2' ]
-50 info retry fetch attempt 1 at 5:02:11 PM
-51 info attempt registry request try #1 at 5:02:11 PM
-52 http fetch GET https://registry.npmjs.org/grunt-rename/-/grunt-rename-0.1.4.tgz
-53 http fetch 200 https://registry.npmjs.org/grunt-rename/-/grunt-rename-0.1.4.tgz
-54 silly fetchAndShaCheck shasum 73d26af1da4d223cb63465cb3506167daf0894c2
-55 verbose addTmpTarball C:\Users\nicholsd\AppData\Local\Temp\npm-15980-ab8cf01c\registry.npmjs.org\grunt-rename\-\grunt-rename-0.1.4.tgz not in flight; adding
-56 verbose addTmpTarball already have metadata; skipping unpack for grunt-rename@0.1.4
-57 verbose correctMkdir C:\Users\nicholsd\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-58 silly cache afterAdd grunt-rename@0.1.4
-59 verbose afterAdd C:\Users\nicholsd\AppData\Roaming\npm-cache\grunt-rename\0.1.4\package\package.json not in flight; writing
-60 verbose correctMkdir C:\Users\nicholsd\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-61 verbose afterAdd C:\Users\nicholsd\AppData\Roaming\npm-cache\grunt-rename\0.1.4\package\package.json written
-62 silly install resolved [ { name: 'grunt-rename',
-62 silly install resolved     description: 'Move and/or rename files.',
-62 silly install resolved     version: '0.1.4',
-62 silly install resolved     homepage: 'https://github.com/jdavis/grunt-rename',
-62 silly install resolved     author:
-62 silly install resolved      { name: 'Josh Davis',
-62 silly install resolved        email: 'josh@joshldavis.com',
-62 silly install resolved        url: 'http://joshldavis.com' },
-62 silly install resolved     repository: { type: 'git', url: 'git://github.com/jdavis/grunt-rename.git' },
-62 silly install resolved     bugs: { url: 'https://github.com/jdavis/grunt-rename/issues' },
-62 silly install resolved     licenses: [ [Object] ],
-62 silly install resolved     main: 'Gruntfile.js',
-62 silly install resolved     engines: { node: '>= 0.8.0' },
-62 silly install resolved     scripts: { test: 'grunt test' },
-62 silly install resolved     dependencies: {},
-62 silly install resolved     devDependencies:
-62 silly install resolved      { 'grunt-contrib-jshint': '~0.1.1',
-62 silly install resolved        'grunt-contrib-clean': '~0.4.0',
-62 silly install resolved        'grunt-contrib-nodeunit': '~0.1.2',
-62 silly install resolved        grunt: '~0.4.1' },
-62 silly install resolved     peerDependencies: { grunt: '~0.4.1' },
-62 silly install resolved     keywords: [ 'gruntplugin', 'move', 'rename' ],
-62 silly install resolved     _id: 'grunt-rename@0.1.4',
-62 silly install resolved     _shasum: '73d26af1da4d223cb63465cb3506167daf0894c2',
-62 silly install resolved     _from: 'grunt-rename@latest',
-62 silly install resolved     _npmVersion: '1.4.7',
-62 silly install resolved     _npmUser: { name: 'jdavis', email: 'josh@joshldavis.com' },
-62 silly install resolved     maintainers: [ [Object] ],
-62 silly install resolved     dist:
-62 silly install resolved      { shasum: '73d26af1da4d223cb63465cb3506167daf0894c2',
-62 silly install resolved        tarball: 'https://registry.npmjs.org/grunt-rename/-/grunt-rename-0.1.4.tgz' },
-62 silly install resolved     directories: {},
-62 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-rename/-/grunt-rename-0.1.4.tgz' } ]
-63 info install grunt-rename@0.1.4 into C:\Work\personal\goodrating-client
-64 info installOne grunt-rename@0.1.4
-65 verbose installOne of grunt-rename to C:\Work\personal\goodrating-client not in flight; installing
-66 verbose correctMkdir C:\Users\nicholsd\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-67 verbose lock using C:\Users\nicholsd\AppData\Roaming\npm-cache\_locks\grunt-rename-075ab6eaa52756a2.lock for C:\Work\personal\goodrating-client\node_modules\grunt-rename
-68 silly install write writing grunt-rename 0.1.4 to C:\Work\personal\goodrating-client\node_modules\grunt-rename
-69 verbose unbuild node_modules\grunt-rename
-70 silly gentlyRm C:\Work\personal\goodrating-client\node_modules\grunt-rename is being purged from base C:\Work\personal\goodrating-client
-71 verbose gentlyRm don't care about contents; nuking C:\Work\personal\goodrating-client\node_modules\grunt-rename
-72 verbose tar unpack C:\Users\nicholsd\AppData\Roaming\npm-cache\grunt-rename\0.1.4\package.tgz
-73 verbose tar unpacking to C:\Work\personal\goodrating-client\node_modules\grunt-rename
-74 silly gentlyRm C:\Work\personal\goodrating-client\node_modules\grunt-rename is being purged
-75 verbose gentlyRm don't care about contents; nuking C:\Work\personal\goodrating-client\node_modules\grunt-rename
-76 silly gunzTarPerm modes [ '777', '666' ]
-77 silly gunzTarPerm extractEntry package.json
-78 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-79 silly gunzTarPerm extractEntry .npmignore
-80 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
-81 silly gunzTarPerm extractEntry README.md
-82 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-83 silly gunzTarPerm extractEntry Gruntfile.js
-84 silly gunzTarPerm modified mode [ 'Gruntfile.js', 420, 438 ]
-85 silly gunzTarPerm extractEntry .jshintrc
-86 silly gunzTarPerm modified mode [ '.jshintrc', 420, 438 ]
-87 silly gunzTarPerm extractEntry .travis.yml
-88 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
-89 silly gunzTarPerm extractEntry LICENSE-MIT
-90 silly gunzTarPerm modified mode [ 'LICENSE-MIT', 420, 438 ]
-91 silly gunzTarPerm extractEntry tasks/rename.js
-92 silly gunzTarPerm modified mode [ 'tasks/rename.js', 420, 438 ]
-93 silly gunzTarPerm extractEntry test/rename_test.js
-94 silly gunzTarPerm modified mode [ 'test/rename_test.js', 420, 438 ]
-95 verbose write writing to C:\Work\personal\goodrating-client\node_modules\grunt-rename\package.json
-96 info preinstall grunt-rename@0.1.4
-97 verbose readDependencies loading dependencies from C:\Work\personal\goodrating-client\node_modules\grunt-rename\package.json
-98 silly prepareForInstallMany adding grunt@~0.4.1 from grunt-rename peerDependencies
-99 warn peerDependencies The peer dependency grunt@~0.4.1 included from grunt-rename will no
-100 warn peerDependencies longer be automatically installed to fulfill the peerDependency
-101 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
-102 verbose readDependencies loading dependencies from C:\Work\personal\goodrating-client\node_modules\grunt-rename\package.json
-103 silly install resolved []
-104 verbose about to build C:\Work\personal\goodrating-client\node_modules\grunt-rename
-105 info build C:\Work\personal\goodrating-client\node_modules\grunt-rename
-106 info linkStuff grunt-rename@0.1.4
-107 silly linkStuff grunt-rename@0.1.4 has C:\Work\personal\goodrating-client\node_modules as its parent node_modules
-108 verbose linkBins grunt-rename@0.1.4
-109 verbose linkMans grunt-rename@0.1.4
-110 verbose rebuildBundles grunt-rename@0.1.4
-111 info install grunt-rename@0.1.4
-112 info postinstall grunt-rename@0.1.4
-113 verbose readDependencies loading dependencies from C:\Work\personal\goodrating-client\package.json
-114 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\bower\package.json
-115 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\compression\package.json
-116 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\express\package.json
-117 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\grunt\package.json
-118 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\grunt-contrib-copy\package.json
-119 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\grunt-contrib-cssmin\package.json
-120 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\grunt-contrib-rename\package.json
-121 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\grunt-contrib-uglify\package.json
-122 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\grunt-rename\package.json
-123 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\grunt-spritesmith\package.json
-124 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\http-server\package.json
-125 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\.bin\bower\package.json
-126 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\.bin\bower.cmd\package.json
-127 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\.bin\grunt\package.json
-128 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\.bin\grunt.cmd\package.json
-129 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\.bin\hs\package.json
-130 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\.bin\hs.cmd\package.json
-131 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\.bin\http-server\package.json
-132 verbose targetResolver reading package data from C:\Work\personal\goodrating-client\node_modules\.bin\http-server.cmd\package.json
-133 verbose already installed skipping grunt@~0.4.1 C:\Work\personal\goodrating-client
-134 silly install resolved []
-135 verbose unlock done using C:\Users\nicholsd\AppData\Roaming\npm-cache\_locks\grunt-rename-075ab6eaa52756a2.lock for C:\Work\personal\goodrating-client\node_modules\grunt-rename
-136 verbose validateInstall loading C:\Work\personal\goodrating-client\package.json for validation
-137 verbose stack Error: The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
-137 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\lib\install.js:125:32
-137 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\lib\install.js:268:7
-137 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
-137 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-137 verbose stack     at cb (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-137 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-137 verbose stack     at cb (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-137 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-137 verbose stack     at cb (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-137 verbose stack     at C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
-138 verbose cwd C:\Work\personal\goodrating-client
-139 error Windows_NT 6.1.7601
-140 error argv "C:\\Program Files (x86)\\nodejs\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-rename" "--save-dev"
-141 error node v4.4.6
-142 error npm  v2.15.5
-143 error code EPEERINVALID
-144 error peerinvalid The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
-144 error peerinvalid Peer grunt-contrib-rename@0.0.3 wants grunt@~0.4.0
-144 error peerinvalid Peer grunt-rename@0.1.4 wants grunt@~0.4.1
-145 verbose exit [ 1, true ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart goodrating-client@0.0.1
+6 info start goodrating-client@0.0.1
+7 verbose unsafe-perm in lifecycle true
+8 info goodrating-client@0.0.1 Failed to exec start script
+9 verbose stack Error: goodrating-client@0.0.1 start: `node server`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at EventEmitter.emit (events.js:172:7)
+9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at ChildProcess.emit (events.js:172:7)
+9 verbose stack     at maybeClose (internal/child_process.js:827:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+10 verbose pkgid goodrating-client@0.0.1
+11 verbose cwd /Users/dnich/Work/goodrating-client
+12 error Darwin 15.4.0
+13 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+14 error node v4.4.3
+15 error npm  v2.15.1
+16 error code ELIFECYCLE
+17 error goodrating-client@0.0.1 start: `node server`
+17 error Exit status 1
+18 error Failed at the goodrating-client@0.0.1 start script 'node server'.
+18 error This is most likely a problem with the goodrating-client package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     node server
+18 error You can get information on how to open an issue for this project with:
+18 error     npm bugs goodrating-client
+18 error Or if that isn't available, you can get their info via:
+18 error
+18 error     npm owner ls goodrating-client
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]

@@ -2,10 +2,10 @@
   "name": "goodrating-client",
   "version": "0.0.1",
   "description": "a client for rating college football teams good",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -a localhost -p 8000",
+    "start": "node server",
     "postinstall": "npm install bower -g && bower install"
   },
   "repository": {

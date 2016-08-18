@@ -30,4 +30,4 @@
     return _dataService;
   }]);
 
-} (angular));
+}(angular));

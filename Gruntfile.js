@@ -75,7 +75,7 @@ var config = function (grunt) {
           {
             cwd: 'src',
             expand: true, 
-            src: ['index-prod.html'], 
+            src: ['assets/imageslogos.png', 'modules/table/views/table.html'], 
             dest: 'dist'
           }
         ]
