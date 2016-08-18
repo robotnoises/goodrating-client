@@ -65,7 +65,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0;
   padding-right: 0;
 }
+.menu ul li:not(.dropdown) {
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
+.menu ul li:not(.dropdown):hover,
+.menu ul li:not(.dropdown):active {
+  cursor: pointer;
+  background-color: #fff;
+}
 .menu i {
   padding-left: 8px;
   font-size: 14px;
@@ -74,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Inputs */
 
 input.text-input {
-  padding: 5px 5px 5px 16px;
+  padding: 5px 5px 5px 0;
   height: auto;
   border: 0;
   outline: 0;
@@ -136,6 +145,41 @@ span.dropdown ul.items li {
 span.dropdown ul.items li:hover {
   cursor: pointer;
   background-color: #fff;
+}
+
+/* Modals */
+
+.modal {
+  position: fixed;
+  margin-top: 10%;
+  width: 600px;
+  min-height: 300px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  z-index: 2;
+  opacity: 1;
+  background-color: transparent;
+  pointer-events: unset;
+}
+
+.modal-backdrop {
+  opacity: 0;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.35);
+  transition: opacity 500ms;
+}
+
+.modal-backdrop.show {
+  z-index: 1;
+  opacity: 1;
 }
 
 /* Images */

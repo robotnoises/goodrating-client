@@ -3,10 +3,6 @@
   
   <div class="quote">The good college football rating.&trade;</div>
 
-  <div>
-    
-  </div>
-
   <div class="menu">
     <ul>
       <li>
@@ -14,6 +10,9 @@
       </li>
       <li>
         <dropdown items="sorts" selected="sortDirection"></dropdown>
+      </li>
+      <li>
+        <span ng-click="toggleModal()">Show Modal</span>
       </li>
       <li>
         <input class="text-input" type="text" ng-model="teamNameFilter" placeholder="Type here to find your team..." />
@@ -60,3 +59,6 @@
     <p class="centered spaced" ng-bind="errorMsg"></p>
   </div>
 </div>
+
+<!-- Modal -->
+<modal items="weights" show="showModal"></modal>

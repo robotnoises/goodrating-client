@@ -49,6 +49,7 @@
 
     $scope.ratings = [];
     $scope.loaded = false;
+    $scope.showModal = false;
     $scope.sortDirection = SORT_DIRECTION.DESCENDING;
     $scope.selectedYear = YEAR[$routeParams.year];
     $scope.sortColumn = ($location.search().sortby) ? COLUMN[$location.search().sortby.toUpperCase()] : COLUMN.TOTAL_RATING;
@@ -75,9 +76,28 @@
       }
     ];
 
+    $scope.weights = [
+      {
+        'name': 'foo',
+        'value': 50
+      },
+      {
+        'name': 'bar',
+        'value': 20
+      },
+      {
+        'name': 'baz',
+        'value': 99
+      }
+    ]
+
     $scope.sortBy = function (column) {
       $location.search('sortby', COLUMN[column.toUpperCase()] || COLUMN.TOTAL_RATING)
     }
+
+    $scope.toggleModal = function (force) {
+      $scope.showModal = (force) ? force : !$scope.showModal;
+    };
 
     // Init
 
