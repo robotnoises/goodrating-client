@@ -45,6 +45,13 @@
       $scope.ratings = (reverse) ? ratingsReversed : ratings;
     }
 
+    function isWeight(key) {
+      return (key === COLUMN.WIN_PERCENTAGE_RATING) ||
+        (key === COLUMN.YPP_OFFENSE_RATING) ||
+        (key === COLUMN.YPP_DEFENSE_RATING) ||
+        (key === COLUMN.RECRUITING_SCORE_RATING);
+    }
+
     // Scope shit
 
     $scope.ratings = [];
@@ -76,20 +83,11 @@
       }
     ];
 
-    $scope.weights = [
-      {
-        'name': 'foo',
-        'value': 50
-      },
-      {
-        'name': 'bar',
-        'value': 20
-      },
-      {
-        'name': 'baz',
-        'value': 99
-      }
-    ]
+    $scope.weights = {};
+    $scope.weights[COLUMN.WIN_PERCENTAGE_RATING] = 45;
+    $scope.weights[COLUMN.YPP_OFFENSE_RATING] = 15;
+    $scope.weights[COLUMN.YPP_DEFENSE_RATING] = 20;
+    $scope.weights[COLUMN.RECRUITING_SCORE_RATING] = 20;
 
     $scope.sortBy = function (column) {
       $location.search('sortby', COLUMN[column.toUpperCase()] || COLUMN.TOTAL_RATING)
@@ -116,7 +114,13 @@
         $scope.loaded = true;
         $scope.errorMsg = 'Sorry, there was a problem retrieving the data.';
         console.error(error);
-      })
+      });
+    
+    Object.keys($location.search()).forEach(function (key) {
+      if (isWeight(key)) {
+        $scope.weights[key] = parseInt($location.search()[key]);
+      }
+    });
   }
   
 })(angular);

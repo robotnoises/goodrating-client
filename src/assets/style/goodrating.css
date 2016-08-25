@@ -161,6 +161,7 @@ span.dropdown ul.items li:hover {
   padding: 25px;
   z-index: 2;
   opacity: 1;
+  overflow: hidden;
   background-color: transparent;
   pointer-events: unset;
 }
@@ -331,8 +332,15 @@ table thead tr th.highlight-cell {
   cursor: pointer;
 }
 
-.centered {
+p.centered,
+span.centered {
   text-align: center;
+}
+
+div.centered, 
+button.centered {
+  display: block;
+  margin: 10px auto 0;
 }
 
 .floating {
@@ -357,4 +365,12 @@ table thead tr th.highlight-cell {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 120px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
