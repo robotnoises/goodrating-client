@@ -3,7 +3,7 @@
   
   <div class="quote">The good college football rating.&trade;</div>
 
-  <div class="menu">
+  <div class="menu noselect">
     <ul>
       <li>
         <dropdown items="years" selected="selectedYear"></dropdown>
@@ -12,7 +12,7 @@
         <dropdown items="sorts" selected="sortDirection"></dropdown>
       </li>
       <li>
-        <span ng-click="toggleModal()">Show Modal</span>
+        <span ng-click="toggleModal()">Adjust Weights <i class="fa fa-sliders"></i></span>
       </li>
       <li>
         <input class="text-input" type="text" ng-model="teamNameFilter" placeholder="Type here to find your team..." />

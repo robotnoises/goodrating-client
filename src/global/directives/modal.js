@@ -18,7 +18,10 @@
         ' <div class="modal" ng-if="showModal">' +
         '   <div class="modal-body">' +
         '     <div class="modal-range" ng-repeat="(name, value) in items">' +
-        '       <p><input type="range" min="0" max="100" ng-value="value" ng-model="items[name]"></p>' +
+        '       <p>' +
+        '         <label><span ng-bind="nameReadable[name]"></span> (<span ng-bind="value"></span><span>%</span>)</label>' + 
+        '         <input type="range" min="0" max="100" ng-value="value" ng-model="items[name]">' +
+        '       </p>' +
         '     </div>' +
         '     <button class="button--sm centered" ng-click="submit()">Let\'s Get Crazy</button>' +
         '   </div>' +
@@ -28,6 +31,13 @@
       link: function (scope, ele, attr) {
         
         scope.showModal = false;
+        
+        scope.nameReadable = {
+          'win_percentage_rating': 'Win Percentage',
+          'ypp_offense_rating': 'Team Offense',
+          'ypp_defense_rating': 'Team Defense',
+          'recruiting_score_rating': 'Player Ratings'
+        };
 
         // Methods
 

@@ -55,9 +55,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu ul li {
   display: table-cell;
-  border-right: 1px solid rgba(0,0,0,0.1);
   list-style: none;
   font-size: 14px;
+}
+
+.menu > ul > li {
+  border-right: 1px solid rgba(0,0,0,0.1);
 }
 
 .menu ul li:last-child {
@@ -111,8 +114,6 @@ span.dropdown {
   position: relative;
   height: 32px;
   line-height: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
   overflow: visible;
 }
 
@@ -135,6 +136,7 @@ span.dropdown ul.items {
   list-style: none;
   padding-left: 0;
   z-index: 2;
+  margin: 0 -16px;
 }
 
 span.dropdown ul.items li { 
@@ -327,6 +329,15 @@ table thead tr th.highlight-cell {
 }
 
 /* Helpers */
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently */
+}
 
 .pointer {
   cursor: pointer;
