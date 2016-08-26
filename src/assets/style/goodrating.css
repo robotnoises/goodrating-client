@@ -344,7 +344,12 @@ table thead tr th.highlight-cell {
 }
 
 p.centered,
-span.centered {
+span.centered,
+h1.centered,
+h2.centered,
+h3.centered,
+h4.centered,
+h5.centered {
   text-align: center;
 }
 
