@@ -27,12 +27,12 @@
     };
 
     var YEAR = {
-      '2015': '2015 Season',
-      '2016': '2016 Season'  
+      '2016': '2016 Season',
+      '2015': '2015 Season'
     };
 
     var SORT_DIRECTION = {
-      'ASCENDING': 'Sort Ascending',
+      'ASCENDING': 'Sort Ascending ',
       'DESCENDING': 'Sort Descending'
     };
     
@@ -63,12 +63,12 @@
 
     $scope.years = [
       { 
-        'name': '2015 Season', 
-        'action': changeYear.bind(undefined, '2015') 
-      },
-      { 
         'name': '2016 Season', 
         'action': changeYear.bind(undefined, '2016') 
+      },
+      { 
+        'name': '2015 Season', 
+        'action': changeYear.bind(undefined, '2015') 
       }
     ];
 
