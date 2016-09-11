@@ -19,6 +19,7 @@
       'YPP_DEFENSE': 'ypp_defense',
       'RECRUITING_SCORE': 'recruiting_score',
       'ATS': 'ats',
+      'ADJUSTMENTS': 'adjustments',
       'WIN_PERCENTAGE_RATING': 'win_percentage_rating',
       'YPP_OFFENSE_RATING': 'ypp_offense_rating',
       'YPP_DEFENSE_RATING': 'ypp_defense_rating',
@@ -84,10 +85,10 @@
     ];
 
     $scope.weights = {};
-    $scope.weights[COLUMN.WIN_PERCENTAGE_RATING] = 45;
-    $scope.weights[COLUMN.YPP_OFFENSE_RATING] = 15;
+    $scope.weights[COLUMN.WIN_PERCENTAGE_RATING] = 35;
+    $scope.weights[COLUMN.YPP_OFFENSE_RATING] = 20;
     $scope.weights[COLUMN.YPP_DEFENSE_RATING] = 20;
-    $scope.weights[COLUMN.RECRUITING_SCORE_RATING] = 20;
+    $scope.weights[COLUMN.RECRUITING_SCORE_RATING] = 25;
 
     $scope.sortBy = function (column) {
       $location.search('sortby', COLUMN[column.toUpperCase()] || COLUMN.TOTAL_RATING)
