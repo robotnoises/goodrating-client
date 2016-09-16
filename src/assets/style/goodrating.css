@@ -399,6 +399,38 @@ button:active {
   background-color: #eee;
 }
 
+/* Footer */
+
+.footer {
+  background-color: #ddd;
+  color: #555;
+  padding: 50px 0;
+  /*box-shadow: 0px 1px 6px rgba(0,0,0,0.2) inset;*/
+  font-size: 13px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  margin-bottom: 2.5px;
+}
+
+.footer a {
+  color: #555;
+}
+
+.footer a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer i {
+  padding-top: 4px;
+}
+
 /* Helpers */
 
 .noselect {
@@ -432,6 +464,10 @@ button.centered {
 
 .centered {
   text-align: center;
+}
+
+.right {
+  text-align: right;
 }
 
 .floating {

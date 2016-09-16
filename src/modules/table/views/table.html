@@ -1,69 +1,65 @@
 <div row>
-  <h1 class="centered">good rating</h1>
-  
-  <div class="quote">The good college football rating.&trade;</div>
+  <div column="12">
+    <h1 class="centered">good rating</h1>
+    
+    <div class="quote">The good college football rating.&trade;</div>
 
-  <div class="menu noselect">
-    <ul>
-      <li class="btn">
-        <dropdown items="years" selected="selectedYear"></dropdown>
-      </li>
-      <li class="btn">
-        <dropdown items="sorts" selected="sortDirection"></dropdown>
-      </li>
-      <li class="btn" ng-click="toggleModal()">
-        <span>Adjust Weights <i class="fa fa-sliders"></i></span>
-      </li>
-      <li>
-        <input class="text-input" type="text" ng-model="teamNameFilter" placeholder="Type here to find your team..." />
-      </li>
-    </ul>
+    <div class="menu noselect">
+      <ul>
+        <li class="btn">
+          <dropdown items="years" selected="selectedYear"></dropdown>
+        </li>
+        <li class="btn">
+          <dropdown items="sorts" selected="sortDirection"></dropdown>
+        </li>
+        <li class="btn" ng-click="toggleModal()">
+          <span>Adjust Weights <i class="fa fa-sliders"></i></span>
+        </li>
+        <li>
+          <input class="text-input" type="text" ng-model="teamNameFilter" placeholder="Type here to find your team..." />
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg-lightgrey scroll-container floating">
+      <table class="table--flat table--hoverRow table--responsive">
+        <thead>
+          <tr class="bold">
+            <th scope="col">Rank</th>
+            <th scope="col" colspan="2">Team</th>
+            <th scope="col" title="Win Percentage Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'win_percentage_rating'}" ng-click="sortBy('win_percentage_rating')">Wins</th>
+            <th scope="col" title="Offensive Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_offense_rating'}" ng-click="sortBy('ypp_offense_rating')">Offense</th>
+            <th scope="col" title="Defensive Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_defense_rating'}" ng-click="sortBy('ypp_defense_rating')">Defense</th>
+            <th scope="col" title="Player Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'recruiting_score_rating'}" ng-click="sortBy('recruiting_score_rating')">Players</th>
+            <th scope="col" title="Rating Adjustments (Against the spread and Strength of Schedule)" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'adjustments'}" ng-click="sortBy('adjustments')">Adjustments</th>
+            <th scope="col" title="Total Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'total_rating'}" ng-click="sortBy('total_rating')">Total</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr ng-if="!loaded" class="bg-grey">
+            <td scope="col" colspan="9">
+              <spinner loaded="loaded"></spinner>
+            </td>
+          </tr>
+          <tr ng-repeat="r in ratings | filter: { name: teamNameFilter }">
+            <td ng-bind="r.rank" class="truncate" title="Team Rank (Total Rating)"></td>
+            <td id="teamname" ng-bind="r.name" title="Team Name"></td>
+            <td><span class="logo" ng-class="'icon-' + r.slug" title="{{r.name}}"></span>&nbsp;</td>
+            <td ng-bind="r.win_percentage_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'win_percentage_rating'}" title="Win Percentage Rating"></td>
+            <td ng-bind="r.ypp_offense_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'ypp_offense_rating'}" title="Offensive Rating"></td>
+            <td ng-bind="r.ypp_defense_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'ypp_defense_rating'}" title="Defensive Rating"></td>
+            <td ng-bind="r.recruiting_score_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'recruiting_score_rating'}" title="Player Rating"></td>
+            <td ng-bind="r.adjustments" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'adjustments'}" title="Rating Adjustments (Against the spread and Strength of Schedule)"></td>
+            <td ng-bind="r.total_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'total_rating'}" title="Total Rating"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div ng-if="errorMsg">
+      <p class="centered spaced" ng-bind="errorMsg"></p>
+    </div>
   </div>
-
-  <div class="bg-lightgrey scroll-container floating">
-    <table class="table--flat table--hoverRow table--responsive">
-      <thead>
-        <tr class="bold">
-          <th scope="col">Rank</th>
-          <th scope="col" colspan="2">Team</th>
-          <th scope="col" title="Win Percentage Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'win_percentage_rating'}" ng-click="sortBy('win_percentage_rating')">Wins</th>
-          <th scope="col" title="Offensive Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_offense_rating'}" ng-click="sortBy('ypp_offense_rating')">Offense</th>
-          <th scope="col" title="Defensive Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_defense_rating'}" ng-click="sortBy('ypp_defense_rating')">Defense</th>
-          <th scope="col" title="Player Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'recruiting_score_rating'}" ng-click="sortBy('recruiting_score_rating')">Players</th>
-          <th scope="col" title="Rating Adjustments (Against the spread and Strength of Schedule)" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'adjustments'}" ng-click="sortBy('adjustments')">Adjustments</th>
-          <th scope="col" title="Total Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'total_rating'}" ng-click="sortBy('total_rating')">Total</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr ng-if="!loaded" class="bg-grey">
-          <td scope="col" colspan="9">
-            <spinner loaded="loaded"></spinner>
-          </td>
-        </tr>
-        <tr ng-repeat="r in ratings | filter: { name: teamNameFilter }">
-          <td ng-bind="r.rank" class="truncate" title="Team Rank (Total Rating)"></td>
-          <td id="teamname" ng-bind="r.name" title="Team Name"></td>
-          <td><span class="logo" ng-class="'icon-' + r.slug" title="{{r.name}}"></span>&nbsp;</td>
-          <td ng-bind="r.win_percentage_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'win_percentage_rating'}" title="Win Percentage Rating"></td>
-          <td ng-bind="r.ypp_offense_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'ypp_offense_rating'}" title="Offensive Rating"></td>
-          <td ng-bind="r.ypp_defense_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'ypp_defense_rating'}" title="Defensive Rating"></td>
-          <td ng-bind="r.recruiting_score_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'recruiting_score_rating'}" title="Player Rating"></td>
-          <td ng-bind="r.adjustments" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'adjustments'}" title="Rating Adjustments (Against the spread and Strength of Schedule)"></td>
-          <td ng-bind="r.total_rating" class="truncate sortable" ng-class="{'highlight-cell': sortColumn === 'total_rating'}" title="Total Rating"></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div ng-if="errorMsg">
-    <p class="centered spaced" ng-bind="errorMsg"></p>
-  </div>
-</div>
-
-<!-- Bottom matter -->
-<div class="centered">
-  <a class="block" href="https://github.com/robotnoises/goodrating/blob/master/README.md" target="_blank">How does goodrating work?</a>
-  <a class="block" href="https://davidnichols.party" target="_blank">Made with (͡° ͜ʖ ͡°) by David Nichols</a>
 </div>
 
 <!-- Modal -->
