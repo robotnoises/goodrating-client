@@ -20,6 +20,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
+/* Links */
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+  color: #555;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Containers */
 
 [container] {
@@ -73,14 +87,22 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 16px;
 }
 
-.menu ul li:not(.dropdown):hover,
-.menu ul li:not(.dropdown):active {
+.menu ul li.btn:not(.dropdown):hover,
+.menu ul li.btn:not(.dropdown):active {
   cursor: pointer;
   background-color: #fff;
 }
 .menu i {
   padding-left: 8px;
   font-size: 14px;
+}
+
+.callout {
+  margin: 0;
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 /* Inputs */
@@ -92,7 +114,6 @@ input.text-input {
   outline: 0;
   font-size: 14px;
   background-color: transparent;
-  /*border-bottom: 1px solid rgba(0,0,0,0.25) !important;*/
   border-radius: 0;
   color: #222;
   box-shadow: none !important;
@@ -149,11 +170,25 @@ span.dropdown ul.items li:hover {
   background-color: #fff;
 }
 
+/* Forms */
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: #e74c3c;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color: #e74c3c;
+}
+
+input[type=range]::-ms-thumb {
+  background-color: #e74c3c;
+}
+
 /* Modals */
 
 .modal {
   position: fixed;
-  margin-top: 10%;
+  margin-top: 5%;
   width: 600px;
   min-height: 300px;
   left: 0;
@@ -183,6 +218,29 @@ span.dropdown ul.items li:hover {
 .modal-backdrop.show {
   z-index: 1;
   opacity: 1;
+}
+
+.modal-header {
+  text-align: center;
+  font-size: 18px;
+  background-color: #e74c3c;
+}
+
+.modal .callout {
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+
+/* Pills */
+
+.pill {
+  display: inline-block;
+  background-color: #eee;
+  color: #555;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 10px;
 }
 
 /* Images */
@@ -328,6 +386,19 @@ table thead tr th.highlight-cell {
   }
 }
 
+/* Buttons */
+
+button,
+button:visited,
+button:link {
+  background-color: #e74c3c;
+}
+
+button:hover,
+button:active {
+  background-color: #eee;
+}
+
 /* Helpers */
 
 .noselect {
@@ -357,6 +428,10 @@ div.centered,
 button.centered {
   display: block;
   margin: 10px auto 0;
+}
+
+.centered {
+  text-align: center;
 }
 
 .floating {
@@ -389,4 +464,13 @@ button.centered {
 
 .float-right {
   float: right;
+}
+
+.strong {
+  font-weight: 800;
+}
+
+.block {
+  display: block;
+  margin-bottom: 15px;
 }

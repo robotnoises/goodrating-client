@@ -38,6 +38,7 @@
     };
     
     function changeYear(year) {
+      $location.search('');
       $location.path('/table/' + year);
     }
 

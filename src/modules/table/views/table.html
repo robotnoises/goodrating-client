@@ -5,14 +5,14 @@
 
   <div class="menu noselect">
     <ul>
-      <li>
+      <li class="btn">
         <dropdown items="years" selected="selectedYear"></dropdown>
       </li>
-      <li>
+      <li class="btn">
         <dropdown items="sorts" selected="sortDirection"></dropdown>
       </li>
-      <li>
-        <span ng-click="toggleModal()">Adjust Weights <i class="fa fa-sliders"></i></span>
+      <li class="btn" ng-click="toggleModal()">
+        <span>Adjust Weights <i class="fa fa-sliders"></i></span>
       </li>
       <li>
         <input class="text-input" type="text" ng-model="teamNameFilter" placeholder="Type here to find your team..." />
@@ -26,12 +26,12 @@
         <tr class="bold">
           <th scope="col">Rank</th>
           <th scope="col" colspan="2">Team</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'win_percentage_rating'}" ng-click="sortBy('win_percentage_rating')">Wins</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_offense_rating'}" ng-click="sortBy('ypp_offense_rating')">Offense</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_defense_rating'}" ng-click="sortBy('ypp_defense_rating')">Defense</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'recruiting_score_rating'}" ng-click="sortBy('recruiting_score_rating')">Players</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'adjustments'}" ng-click="sortBy('adjustments')">Adjustments</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'total_rating'}" ng-click="sortBy('total_rating')">Total</th>
+          <th scope="col" title="Win Percentage Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'win_percentage_rating'}" ng-click="sortBy('win_percentage_rating')">Wins</th>
+          <th scope="col" title="Offensive Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_offense_rating'}" ng-click="sortBy('ypp_offense_rating')">Offense</th>
+          <th scope="col" title="Defensive Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_defense_rating'}" ng-click="sortBy('ypp_defense_rating')">Defense</th>
+          <th scope="col" title="Player Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'recruiting_score_rating'}" ng-click="sortBy('recruiting_score_rating')">Players</th>
+          <th scope="col" title="Rating Adjustments (Against the spread and Strength of Schedule)" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'adjustments'}" ng-click="sortBy('adjustments')">Adjustments</th>
+          <th scope="col" title="Total Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'total_rating'}" ng-click="sortBy('total_rating')">Total</th>
         </tr>
       </thead>
 
@@ -60,5 +60,11 @@
   </div>
 </div>
 
+<!-- Bottom matter -->
+<div class="centered">
+  <a class="block" href="https://github.com/robotnoises/goodrating/blob/master/README.md" target="_blank">How does goodrating work?</a>
+  <a class="block" href="https://davidnichols.party" target="_blank">Made with (͡° ͜ʖ ͡°) by David Nichols</a>
+</div>
+
 <!-- Modal -->
-<modal items="weights" show="showModal"></modal>
+<weights-slider items="weights" show="showModal"></weights-slider>

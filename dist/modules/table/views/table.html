@@ -26,12 +26,12 @@
         <tr class="bold">
           <th scope="col">Rank</th>
           <th scope="col" colspan="2">Team</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'win_percentage_rating'}" ng-click="sortBy('win_percentage_rating')">Wins</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_offense_rating'}" ng-click="sortBy('ypp_offense_rating')">Offense</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_defense_rating'}" ng-click="sortBy('ypp_defense_rating')">Defense</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'recruiting_score_rating'}" ng-click="sortBy('recruiting_score_rating')">Players</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'adjustments'}" ng-click="sortBy('adjustments')">Adjustments</th>
-          <th scope="col" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'total_rating'}" ng-click="sortBy('total_rating')">Total</th>
+          <th scope="col" title="Win Percentage Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'win_percentage_rating'}" ng-click="sortBy('win_percentage_rating')">Wins</th>
+          <th scope="col" title="Offensive Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_offense_rating'}" ng-click="sortBy('ypp_offense_rating')">Offense</th>
+          <th scope="col" title="Defensive Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'ypp_defense_rating'}" ng-click="sortBy('ypp_defense_rating')">Defense</th>
+          <th scope="col" title="Player Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'recruiting_score_rating'}" ng-click="sortBy('recruiting_score_rating')">Players</th>
+          <th scope="col" title="Rating Adjustments (Against the spread and Strength of Schedule)" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'adjustments'}" ng-click="sortBy('adjustments')">Adjustments</th>
+          <th scope="col" title="Total Rating" class="pointer highlightable-cell" ng-class="{'highlight-cell': sortColumn === 'total_rating'}" ng-click="sortBy('total_rating')">Total</th>
         </tr>
       </thead>
 
