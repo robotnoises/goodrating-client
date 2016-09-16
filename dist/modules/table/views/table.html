@@ -5,14 +5,14 @@
 
   <div class="menu noselect">
     <ul>
-      <li>
+      <li class="btn">
         <dropdown items="years" selected="selectedYear"></dropdown>
       </li>
-      <li>
+      <li class="btn">
         <dropdown items="sorts" selected="sortDirection"></dropdown>
       </li>
-      <li>
-        <span ng-click="toggleModal()">Adjust Weights <i class="fa fa-sliders"></i></span>
+      <li class="btn" ng-click="toggleModal()">
+        <span>Adjust Weights <i class="fa fa-sliders"></i></span>
       </li>
       <li>
         <input class="text-input" type="text" ng-model="teamNameFilter" placeholder="Type here to find your team..." />
@@ -60,5 +60,11 @@
   </div>
 </div>
 
+<!-- Bottom matter -->
+<div class="centered">
+  <a class="block" href="https://github.com/robotnoises/goodrating/blob/master/README.md" target="_blank">How does goodrating work?</a>
+  <a class="block" href="https://davidnichols.party" target="_blank">Made with (͡° ͜ʖ ͡°) by David Nichols</a>
+</div>
+
 <!-- Modal -->
-<modal items="weights" show="showModal"></modal>
+<weights-slider items="weights" show="showModal"></weights-slider>
