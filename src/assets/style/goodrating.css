@@ -36,9 +36,9 @@ a:hover {
 
 /* Containers */
 
-[container] {
+/*[container] {
   min-width: 1200px;
-}
+}*/
 
 .scroll-container {
   overflow-x: auto;
@@ -189,7 +189,7 @@ input[type=range]::-ms-thumb {
 .modal {
   position: fixed;
   margin-top: 5%;
-  width: 600px;
+  max-width: 600px;
   min-height: 300px;
   left: 0;
   right: 0;
@@ -404,8 +404,7 @@ button:active {
 .footer {
   background-color: #ddd;
   color: #555;
-  padding: 50px 0;
-  /*box-shadow: 0px 1px 6px rgba(0,0,0,0.2) inset;*/
+  padding: 25px 0;
   font-size: 13px;
 }
 
@@ -515,4 +514,333 @@ div.note {
   font-size: 10px;
   color: #999;
   padding: 1px 6px;
+}
+
+/* Mobile */
+
+.mobile-show {
+  display: none;
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .mobile-stack {
+      display: block;
+    }
+        
+    .mobile-centered {
+      display: block;
+      text-align: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100%;
+    }
+    
+    .mobile-hidden {
+      display: none;
+    }
+    
+    th.mobile-show {
+      display: table-cell;
+    }
+
+    div.note {
+      margin-bottom: 15px;
+    }
+
+    .right {
+      text-align: center;
+    }
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .mobile-stack {
+      display: block;
+    }
+        
+    .mobile-centered {
+      display: block;
+      text-align: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100%;
+    }
+    
+    .mobile-hidden {
+      display: none;
+    }
+    
+    th.mobile-show {
+      display: table-cell;
+    }
+
+    div.note {
+      margin-bottom: 15px;
+    }
+
+    .right {
+      text-align: center;
+    }
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .mobile-stack {
+      display: block;
+    }
+        
+    .mobile-centered {
+      display: block;
+      text-align: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100%;
+    }
+    
+    .mobile-hidden {
+      display: none;
+    }
+    
+    th.mobile-show {
+      display: table-cell;
+    }
+
+    div.note {
+      margin-bottom: 15px;
+    }
+
+    .right {
+      text-align: center;
+    }
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .mobile-stack {
+      display: block;
+    }
+        
+    .mobile-centered {
+      display: block;
+      text-align: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100%;
+    }
+    
+    .mobile-hidden {
+      display: none;
+    }
+    
+    th.mobile-show {
+      display: table-cell;
+    }
+
+    div.note {
+      margin-bottom: 15px;
+    }
+
+    .right {
+      text-align: center;
+    }
+}
+
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+    .mobile-stack {
+      display: block;
+    }
+        
+    .mobile-centered {
+      display: block;
+      text-align: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100%;
+    }
+    
+    .mobile-hidden {
+      display: none;
+    }
+    
+    th.mobile-show {
+      display: table-cell;
+    }
+
+    div.note {
+      margin-bottom: 15px;
+    }
+
+    .right {
+      text-align: center;
+    }
+}
+
+/* ----------- Galaxy S4 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .mobile-stack {
+      display: block;
+    }
+        
+    .mobile-centered {
+      display: block;
+      text-align: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100%;
+    }
+    
+    .mobile-hidden {
+      display: none;
+    }
+    
+    th.mobile-show {
+      display: table-cell;
+    }
+
+    div.note {
+      margin-bottom: 15px;
+    }
+
+    .right {
+      text-align: center;
+    }
+}
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .mobile-stack {
+      display: block;
+    }
+        
+    .mobile-centered {
+      display: block;
+      text-align: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100%;
+    }
+    
+    .mobile-hidden {
+      display: none;
+    }
+    
+    th.mobile-show {
+      display: table-cell;
+    }
+
+    div.note {
+      margin-bottom: 15px;
+    }
+
+    .right {
+      text-align: center;
+    }
+}
+
+/* ----------- HTC One ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .mobile-stack {
+      display: block;
+    }
+        
+    .mobile-centered {
+      display: block;
+      text-align: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100%;
+    }
+    
+    .mobile-hidden {
+      display: none;
+    }
+    
+    th.mobile-show {
+      display: table-cell;
+    }
+
+    div.note {
+      margin-bottom: 15px;
+    }
+
+    .right {
+      text-align: center;
+    }
+}
+
+/* Everything else */
+
+/* Portrait and Landscape */
+@media (min-width: 0px) 
+  and (max-width: 920px) {
+    .mobile-stack {
+      display: block !important;
+      border-right: none !important;
+    }
+    
+    .mobile-centered {
+      display: block;
+      text-align: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100%;
+    }
+    
+    .mobile-hidden {
+      display: none;
+    }
+    
+    th.mobile-show {
+      display: table-cell;
+    }
+
+    div.note {
+      margin-bottom: 15px;
+    }
+
+    .right {
+      text-align: center;
+    }
 }

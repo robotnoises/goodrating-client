@@ -22,9 +22,9 @@
       },
       template: 
         '<div>' +
-        ' <span class="dropdown" ng-click="toggleDropdown()">' +
+        ' <span class="dropdown mobile-centered" ng-click="toggleDropdown()">' +
         '   <span class="selected" ng-bind="selectedText"></span><i class="fa fa-chevron-down"></i>' +
-        '   <ul class="items" ng-show="show">' +
+        '   <ul class="items mobile-centered" ng-show="show">' +
         '     <li ng-repeat="i in items" ng-click="i.action()" ng-bind="i.name"></li>' +
         '   </ul>' +
         ' </span>' + 
