@@ -63,6 +63,8 @@
     $scope.selectedYear = YEAR[$routeParams.year];
     $scope.sortColumn = ($location.search().sortby) ? COLUMN[$location.search().sortby.toUpperCase()] : COLUMN.TOTAL_RATING;
 
+    $scope.updated = 'Last updated September 18, 2016';
+
     $scope.years = [
       { 
         'name': '2016 Season', 

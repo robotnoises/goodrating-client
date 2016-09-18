@@ -459,7 +459,7 @@ h5.centered {
 div.centered, 
 button.centered {
   display: block;
-  margin: 10px auto 0;
+  margin: 0 auto;
 }
 
 .centered {
@@ -509,4 +509,10 @@ button.centered {
 .block {
   display: block;
   margin-bottom: 15px;
+}
+
+div.note {
+  font-size: 10px;
+  color: #999;
+  padding: 1px 6px;
 }
