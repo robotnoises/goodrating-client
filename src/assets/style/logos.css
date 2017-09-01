@@ -24,7 +24,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-akron {
   background-image: url(../images/logos.png);
-  background-position: -1200px 0px;
+  background-position: -1200px -150px;
   width: 150px;
   height: 150px;
 }
@@ -148,255 +148,261 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 150px;
   height: 150px;
 }
-.icon-colorado {
+.icon-coastalcarolina {
   background-image: url(../images/logos.png);
   background-position: -300px -600px;
   width: 150px;
   height: 150px;
 }
-.icon-coloradostate {
+.icon-colorado {
   background-image: url(../images/logos.png);
   background-position: -450px -600px;
   width: 150px;
   height: 150px;
 }
-.icon-duke {
+.icon-coloradostate {
   background-image: url(../images/logos.png);
   background-position: -600px -600px;
   width: 150px;
   height: 150px;
 }
-.icon-eastcarolina {
+.icon-duke {
   background-image: url(../images/logos.png);
   background-position: -750px 0px;
   width: 150px;
   height: 150px;
 }
-.icon-easternmichigan {
+.icon-eastcarolina {
   background-image: url(../images/logos.png);
   background-position: -750px -150px;
   width: 150px;
   height: 150px;
 }
-.icon-florida {
+.icon-easternmichigan {
   background-image: url(../images/logos.png);
   background-position: -750px -300px;
   width: 150px;
   height: 150px;
 }
-.icon-floridaatlantic {
+.icon-florida {
   background-image: url(../images/logos.png);
   background-position: -750px -450px;
   width: 150px;
   height: 150px;
 }
-.icon-floridainternational {
+.icon-floridaatlantic {
   background-image: url(../images/logos.png);
   background-position: -750px -600px;
   width: 150px;
   height: 150px;
 }
-.icon-floridastate {
+.icon-floridainternational {
   background-image: url(../images/logos.png);
   background-position: 0px -750px;
   width: 150px;
   height: 150px;
 }
-.icon-fresnostate {
+.icon-floridastate {
   background-image: url(../images/logos.png);
   background-position: -150px -750px;
   width: 150px;
   height: 150px;
 }
-.icon-georgia {
+.icon-fresnostate {
   background-image: url(../images/logos.png);
   background-position: -300px -750px;
   width: 150px;
   height: 150px;
 }
-.icon-georgiasouthern {
+.icon-georgia {
   background-image: url(../images/logos.png);
   background-position: -450px -750px;
   width: 150px;
   height: 150px;
 }
-.icon-georgiastate {
+.icon-georgiasouthern {
   background-image: url(../images/logos.png);
   background-position: -600px -750px;
   width: 150px;
   height: 150px;
 }
-.icon-georgiatech {
+.icon-georgiastate {
   background-image: url(../images/logos.png);
   background-position: -750px -750px;
   width: 150px;
   height: 150px;
 }
-.icon-hawaii {
+.icon-georgiatech {
   background-image: url(../images/logos.png);
   background-position: -900px 0px;
   width: 150px;
   height: 150px;
 }
-.icon-houston {
+.icon-hawaii {
   background-image: url(../images/logos.png);
   background-position: -900px -150px;
   width: 150px;
   height: 150px;
 }
-.icon-idaho {
+.icon-houston {
   background-image: url(../images/logos.png);
   background-position: -900px -300px;
   width: 150px;
   height: 150px;
 }
-.icon-illinois {
+.icon-idaho {
   background-image: url(../images/logos.png);
   background-position: -900px -450px;
   width: 150px;
   height: 150px;
 }
-.icon-indiana {
+.icon-illinois {
   background-image: url(../images/logos.png);
   background-position: -900px -600px;
   width: 150px;
   height: 150px;
 }
-.icon-iowa {
+.icon-indiana {
   background-image: url(../images/logos.png);
   background-position: -900px -750px;
   width: 150px;
   height: 150px;
 }
-.icon-iowastate {
+.icon-iowa {
   background-image: url(../images/logos.png);
   background-position: 0px -900px;
   width: 150px;
   height: 150px;
 }
-.icon-kansas {
+.icon-iowastate {
   background-image: url(../images/logos.png);
   background-position: -150px -900px;
   width: 150px;
   height: 150px;
 }
-.icon-kansasstate {
+.icon-kansas {
   background-image: url(../images/logos.png);
   background-position: -300px -900px;
   width: 150px;
   height: 150px;
 }
-.icon-kentstate {
+.icon-kansasstate {
   background-image: url(../images/logos.png);
   background-position: -450px -900px;
   width: 150px;
   height: 150px;
 }
-.icon-kentucky {
+.icon-kentstate {
   background-image: url(../images/logos.png);
   background-position: -600px -900px;
   width: 150px;
   height: 150px;
 }
-.icon-louisianalafayette {
+.icon-kentucky {
   background-image: url(../images/logos.png);
   background-position: -750px -900px;
   width: 150px;
   height: 150px;
 }
-.icon-louisianamonroe {
+.icon-louisianalafayette {
   background-image: url(../images/logos.png);
   background-position: -900px -900px;
   width: 150px;
   height: 150px;
 }
-.icon-louisianatech {
+.icon-louisianamonroe {
   background-image: url(../images/logos.png);
   background-position: -1050px 0px;
   width: 150px;
   height: 150px;
 }
-.icon-louisville {
+.icon-louisianatech {
   background-image: url(../images/logos.png);
   background-position: -1050px -150px;
   width: 150px;
   height: 150px;
 }
-.icon-lsu {
+.icon-louisville {
   background-image: url(../images/logos.png);
   background-position: -1050px -300px;
   width: 150px;
   height: 150px;
 }
-.icon-marshall {
+.icon-lsu {
   background-image: url(../images/logos.png);
   background-position: -1050px -450px;
   width: 150px;
   height: 150px;
 }
-.icon-maryland {
+.icon-marshall {
   background-image: url(../images/logos.png);
   background-position: -1050px -600px;
   width: 150px;
   height: 150px;
 }
-.icon-massachusetts {
+.icon-maryland {
   background-image: url(../images/logos.png);
   background-position: -1050px -750px;
   width: 150px;
   height: 150px;
 }
-.icon-memphis {
+.icon-massachusetts {
   background-image: url(../images/logos.png);
   background-position: -1050px -900px;
   width: 150px;
   height: 150px;
 }
-.icon-miami {
+.icon-memphis {
   background-image: url(../images/logos.png);
   background-position: 0px -1050px;
   width: 150px;
   height: 150px;
 }
-.icon-miamioh {
+.icon-miami {
   background-image: url(../images/logos.png);
   background-position: -150px -1050px;
   width: 150px;
   height: 150px;
 }
-.icon-michigan {
+.icon-miamioh {
   background-image: url(../images/logos.png);
   background-position: -300px -1050px;
   width: 150px;
   height: 150px;
 }
-.icon-michiganstate {
+.icon-michigan {
   background-image: url(../images/logos.png);
   background-position: -450px -1050px;
   width: 150px;
   height: 150px;
 }
-.icon-middletennesseestate {
+.icon-michiganstate {
   background-image: url(../images/logos.png);
   background-position: -600px -1050px;
   width: 150px;
   height: 150px;
 }
-.icon-minnesota {
+.icon-middletennesseestate {
   background-image: url(../images/logos.png);
   background-position: -750px -1050px;
   width: 150px;
   height: 150px;
 }
-.icon-mississippistate {
+.icon-minnesota {
   background-image: url(../images/logos.png);
   background-position: -900px -1050px;
   width: 150px;
   height: 150px;
 }
-.icon-missouri {
+.icon-mississippistate {
   background-image: url(../images/logos.png);
   background-position: -1050px -1050px;
+  width: 150px;
+  height: 150px;
+}
+.icon-missouri {
+  background-image: url(../images/logos.png);
+  background-position: -1200px 0px;
   width: 150px;
   height: 150px;
 }
@@ -408,385 +414,385 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-nebraska {
   background-image: url(../images/logos.png);
-  background-position: -1200px -150px;
+  background-position: -1200px -300px;
   width: 150px;
   height: 150px;
 }
 .icon-nevada {
   background-image: url(../images/logos.png);
-  background-position: -1200px -300px;
+  background-position: -1200px -450px;
   width: 150px;
   height: 150px;
 }
 .icon-newmexico {
   background-image: url(../images/logos.png);
-  background-position: -1200px -450px;
+  background-position: -1200px -600px;
   width: 150px;
   height: 150px;
 }
 .icon-newmexicostate {
   background-image: url(../images/logos.png);
-  background-position: -1200px -600px;
+  background-position: -1200px -750px;
   width: 150px;
   height: 150px;
 }
 .icon-northcarolina {
   background-image: url(../images/logos.png);
-  background-position: -1200px -750px;
+  background-position: -1200px -900px;
   width: 150px;
   height: 150px;
 }
 .icon-northcarolinastate {
   background-image: url(../images/logos.png);
-  background-position: -1200px -900px;
+  background-position: -1200px -1050px;
   width: 150px;
   height: 150px;
 }
 .icon-northernillinois {
   background-image: url(../images/logos.png);
-  background-position: -1200px -1050px;
+  background-position: 0px -1200px;
   width: 150px;
   height: 150px;
 }
 .icon-northtexas {
   background-image: url(../images/logos.png);
-  background-position: 0px -1200px;
+  background-position: -150px -1200px;
   width: 150px;
   height: 150px;
 }
 .icon-northwestern {
   background-image: url(../images/logos.png);
-  background-position: -150px -1200px;
+  background-position: -300px -1200px;
   width: 150px;
   height: 150px;
 }
 .icon-notredame {
   background-image: url(../images/logos.png);
-  background-position: -300px -1200px;
+  background-position: -450px -1200px;
   width: 150px;
   height: 150px;
 }
 .icon-ohio {
   background-image: url(../images/logos.png);
-  background-position: -450px -1200px;
+  background-position: -600px -1200px;
   width: 150px;
   height: 150px;
 }
 .icon-ohiostate {
   background-image: url(../images/logos.png);
-  background-position: -600px -1200px;
+  background-position: -750px -1200px;
   width: 150px;
   height: 150px;
 }
 .icon-oklahoma {
   background-image: url(../images/logos.png);
-  background-position: -750px -1200px;
+  background-position: -900px -1200px;
   width: 150px;
   height: 150px;
 }
 .icon-oklahomastate {
   background-image: url(../images/logos.png);
-  background-position: -900px -1200px;
+  background-position: -1050px -1200px;
   width: 150px;
   height: 150px;
 }
 .icon-olddominion {
   background-image: url(../images/logos.png);
-  background-position: -1050px -1200px;
+  background-position: -1200px -1200px;
   width: 150px;
   height: 150px;
 }
 .icon-olemiss {
   background-image: url(../images/logos.png);
-  background-position: -1200px -1200px;
+  background-position: -1350px 0px;
   width: 150px;
   height: 150px;
 }
 .icon-oregon {
   background-image: url(../images/logos.png);
-  background-position: -1350px 0px;
+  background-position: -1350px -150px;
   width: 150px;
   height: 150px;
 }
 .icon-oregonstate {
   background-image: url(../images/logos.png);
-  background-position: -1350px -150px;
+  background-position: -1350px -300px;
   width: 150px;
   height: 150px;
 }
 .icon-pennstate {
   background-image: url(../images/logos.png);
-  background-position: -1350px -300px;
+  background-position: -1350px -450px;
   width: 150px;
   height: 150px;
 }
 .icon-pittsburgh {
   background-image: url(../images/logos.png);
-  background-position: -1350px -450px;
+  background-position: -1350px -600px;
   width: 150px;
   height: 150px;
 }
 .icon-purdue {
   background-image: url(../images/logos.png);
-  background-position: -1350px -600px;
+  background-position: -1350px -750px;
   width: 150px;
   height: 150px;
 }
 .icon-rice {
   background-image: url(../images/logos.png);
-  background-position: -1350px -750px;
+  background-position: -1350px -900px;
   width: 150px;
   height: 150px;
 }
 .icon-rutgers {
   background-image: url(../images/logos.png);
-  background-position: -1350px -900px;
+  background-position: -1350px -1050px;
   width: 150px;
   height: 150px;
 }
 .icon-sandiegostate {
   background-image: url(../images/logos.png);
-  background-position: -1350px -1050px;
+  background-position: -1350px -1200px;
   width: 150px;
   height: 150px;
 }
 .icon-sanjosestate {
   background-image: url(../images/logos.png);
-  background-position: -1350px -1200px;
+  background-position: 0px -1350px;
   width: 150px;
   height: 150px;
 }
 .icon-smu {
   background-image: url(../images/logos.png);
-  background-position: 0px -1350px;
+  background-position: -150px -1350px;
   width: 150px;
   height: 150px;
 }
 .icon-southalabama {
   background-image: url(../images/logos.png);
-  background-position: -150px -1350px;
+  background-position: -300px -1350px;
   width: 150px;
   height: 150px;
 }
 .icon-southcarolina {
   background-image: url(../images/logos.png);
-  background-position: -300px -1350px;
+  background-position: -450px -1350px;
   width: 150px;
   height: 150px;
 }
 .icon-southernmississippi {
   background-image: url(../images/logos.png);
-  background-position: -450px -1350px;
+  background-position: -600px -1350px;
   width: 150px;
   height: 150px;
 }
 .icon-stanford {
   background-image: url(../images/logos.png);
-  background-position: -600px -1350px;
+  background-position: -750px -1350px;
   width: 150px;
   height: 150px;
 }
 .icon-syracuse {
   background-image: url(../images/logos.png);
-  background-position: -750px -1350px;
+  background-position: -900px -1350px;
   width: 150px;
   height: 150px;
 }
 .icon-tcu {
   background-image: url(../images/logos.png);
-  background-position: -900px -1350px;
+  background-position: -1050px -1350px;
   width: 150px;
   height: 150px;
 }
 .icon-temple {
   background-image: url(../images/logos.png);
-  background-position: -1050px -1350px;
+  background-position: -1200px -1350px;
   width: 150px;
   height: 150px;
 }
 .icon-tennessee {
   background-image: url(../images/logos.png);
-  background-position: -1200px -1350px;
+  background-position: -1350px -1350px;
   width: 150px;
   height: 150px;
 }
 .icon-texas {
   background-image: url(../images/logos.png);
-  background-position: -1350px -1350px;
+  background-position: -1500px 0px;
   width: 150px;
   height: 150px;
 }
 .icon-texasam {
   background-image: url(../images/logos.png);
-  background-position: -1500px 0px;
+  background-position: -1500px -150px;
   width: 150px;
   height: 150px;
 }
 .icon-texassanantonio {
   background-image: url(../images/logos.png);
-  background-position: -1500px -150px;
+  background-position: -1500px -300px;
   width: 150px;
   height: 150px;
 }
 .icon-texasstate {
   background-image: url(../images/logos.png);
-  background-position: -1500px -300px;
+  background-position: -1500px -450px;
   width: 150px;
   height: 150px;
 }
 .icon-texastech {
   background-image: url(../images/logos.png);
-  background-position: -1500px -450px;
+  background-position: -1500px -600px;
   width: 150px;
   height: 150px;
 }
 .icon-toledo {
   background-image: url(../images/logos.png);
-  background-position: -1500px -600px;
+  background-position: -1500px -750px;
   width: 150px;
   height: 150px;
 }
 .icon-troy {
   background-image: url(../images/logos.png);
-  background-position: -1500px -750px;
+  background-position: -1500px -900px;
   width: 150px;
   height: 150px;
 }
 .icon-tulane {
   background-image: url(../images/logos.png);
-  background-position: -1500px -900px;
+  background-position: -1500px -1050px;
   width: 150px;
   height: 150px;
 }
 .icon-tulsa {
   background-image: url(../images/logos.png);
-  background-position: -1500px -1050px;
+  background-position: -1500px -1200px;
   width: 150px;
   height: 150px;
 }
 .icon-uab {
   background-image: url(../images/logos.png);
-  background-position: -1500px -1200px;
+  background-position: -1500px -1350px;
   width: 150px;
   height: 150px;
 }
 .icon-ucf {
   background-image: url(../images/logos.png);
-  background-position: -1500px -1350px;
+  background-position: 0px -1500px;
   width: 150px;
   height: 150px;
 }
 .icon-ucla {
   background-image: url(../images/logos.png);
-  background-position: 0px -1500px;
+  background-position: -150px -1500px;
   width: 150px;
   height: 150px;
 }
 .icon-uconn {
   background-image: url(../images/logos.png);
-  background-position: -150px -1500px;
+  background-position: -300px -1500px;
   width: 150px;
   height: 150px;
 }
 .icon-unlv {
   background-image: url(../images/logos.png);
-  background-position: -300px -1500px;
+  background-position: -450px -1500px;
   width: 150px;
   height: 150px;
 }
 .icon-usc {
   background-image: url(../images/logos.png);
-  background-position: -450px -1500px;
+  background-position: -600px -1500px;
   width: 150px;
   height: 150px;
 }
 .icon-usf {
   background-image: url(../images/logos.png);
-  background-position: -600px -1500px;
+  background-position: -750px -1500px;
   width: 150px;
   height: 150px;
 }
 .icon-utah {
   background-image: url(../images/logos.png);
-  background-position: -750px -1500px;
+  background-position: -900px -1500px;
   width: 150px;
   height: 150px;
 }
 .icon-utahstate {
   background-image: url(../images/logos.png);
-  background-position: -900px -1500px;
+  background-position: -1050px -1500px;
   width: 150px;
   height: 150px;
 }
 .icon-utep {
   background-image: url(../images/logos.png);
-  background-position: -1050px -1500px;
+  background-position: -1200px -1500px;
   width: 150px;
   height: 150px;
 }
 .icon-vanderbilt {
   background-image: url(../images/logos.png);
-  background-position: -1200px -1500px;
+  background-position: -1350px -1500px;
   width: 150px;
   height: 150px;
 }
 .icon-virginia {
   background-image: url(../images/logos.png);
-  background-position: -1350px -1500px;
+  background-position: -1500px -1500px;
   width: 150px;
   height: 150px;
 }
 .icon-virginiatech {
   background-image: url(../images/logos.png);
-  background-position: -1500px -1500px;
+  background-position: -1650px 0px;
   width: 150px;
   height: 150px;
 }
 .icon-wakeforest {
   background-image: url(../images/logos.png);
-  background-position: -1650px 0px;
+  background-position: -1650px -150px;
   width: 150px;
   height: 150px;
 }
 .icon-washington {
   background-image: url(../images/logos.png);
-  background-position: -1650px -150px;
+  background-position: -1650px -300px;
   width: 150px;
   height: 150px;
 }
 .icon-washingtonstate {
   background-image: url(../images/logos.png);
-  background-position: -1650px -300px;
+  background-position: -1650px -450px;
   width: 150px;
   height: 150px;
 }
 .icon-westernkentucky {
   background-image: url(../images/logos.png);
-  background-position: -1650px -450px;
+  background-position: -1650px -600px;
   width: 150px;
   height: 150px;
 }
 .icon-westernmichigan {
   background-image: url(../images/logos.png);
-  background-position: -1650px -600px;
+  background-position: -1650px -750px;
   width: 150px;
   height: 150px;
 }
 .icon-westvirginia {
   background-image: url(../images/logos.png);
-  background-position: -1650px -750px;
+  background-position: -1650px -900px;
   width: 150px;
   height: 150px;
 }
 .icon-wisconsin {
   background-image: url(../images/logos.png);
-  background-position: -1650px -900px;
+  background-position: -1650px -1050px;
   width: 150px;
   height: 150px;
 }
 .icon-wyoming {
   background-image: url(../images/logos.png);
-  background-position: -1650px -1050px;
+  background-position: -1650px -1200px;
   width: 150px;
   height: 150px;
 }
