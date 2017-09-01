@@ -67,6 +67,10 @@
 
     $scope.years = [
       { 
+        'name': '2017 Season', 
+        'action': changeYear.bind(undefined, '2017') 
+      },
+      { 
         'name': '2016 Season', 
         'action': changeYear.bind(undefined, '2016') 
       },

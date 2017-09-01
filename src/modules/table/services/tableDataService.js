@@ -9,7 +9,8 @@
 
     var _dataService = {};
     
-    var apiBase = 'https://goodrating.herokuapp.com/api/v1'; // 'http://localhost:12345/api/v1';
+    // var apiBase = 'https://goodrating.herokuapp.com/api/v1';
+    var apiBase = 'http://localhost:12345/api/v1';
 
     function _calc(path, query) {
       return $q(function (resolve, reject) {
