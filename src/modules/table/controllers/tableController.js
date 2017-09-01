@@ -28,6 +28,7 @@
     };
 
     var YEAR = {
+      '2017': '2017 Season',
       '2016': '2016 Season',
       '2015': '2015 Season'
     };
@@ -63,10 +64,10 @@
     $scope.selectedYear = YEAR[$routeParams.year];
     $scope.sortColumn = ($location.search().sortby) ? COLUMN[$location.search().sortby.toUpperCase()] : COLUMN.TOTAL_RATING;
 
-    $scope.updated = 'Last updated October 24, 2016';
+    $scope.updated = 'Last updated September 1, 2017';
 
     $scope.years = [
-      { 
+      {
         'name': '2017 Season', 
         'action': changeYear.bind(undefined, '2017') 
       },
